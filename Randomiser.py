@@ -3,9 +3,16 @@ from shutil import *
 
 direc=os.getcwd()
 print(direc)
+autodirec=input("1.Enter directory\n2.Use file directory\n")
+
+if(autodirec=="1"):
+    direc=input("Enter game data directory: ")
+else:
+    ()
+
 directory=[r"\\textures\\architecture\\",r"\\textures\\armor\\",r"\\textures\\characters\\",r"\\textures\\clutter\\",r"\\textures\\creatures\\",r"\\textures\\decals\\",r"\\textures\\dungeons\\",r"\\textures\\effects\\",r"\\textures\\fonts\\",r"\\textures\\furniture\\",r"\\textures\\gore\\",r"\\textures\\interface\\barter",r"\\textures\\interface\\companion_wheel",r"\\textures\\interface\\credits",r"\\textures\\interface\\endgame",r"\\textures\\interface\\faders",r"\\textures\\interface\\hotkeys",r"\\textures\\interface\\hud",r"\\textures\\interface\\icons",r"\\textures\\interface\\loading",r"\\textures\\interface\\main",r"\\textures\\interface\\notes",r"\\textures\\interface\\pause",r"\\textures\\interface\\radio wave",r"\\textures\\interface\\shared",r"\\textures\\interface\\stats",r"\\textures\\interface\\target_reticule",r"\\textures\\interface\\vats",r"\\textures\\interface\\worldmap",r"\\textures\\landscape\\",r"\\textures\\pimpboy3billion\\",r"\\textures\\pipboy3000\\",r"\\textures\\projectiles\\",r"\\textures\\shared\\",r"\\textures\\sky\\",r"\\textures\\temp\\",r"\\textures\\terminals\\",r"\\textures\\traps\\",r"\\textures\\trees\\",r"\\textures\\vehicles\\",r"\\textures\\water\\",r"\\textures\\weapons\\"]
 audiodirectory=[r"Sound\\fx\\amb",r"Sound\\fx\\drs",r"Sound\\fx\\emt",r"Sound\\fx\\fol",r"Sound\\fx\\fst",r"Sound\\fx\\fx",r"Sound\\fx\\itm",r"Sound\\fx\\mus",r"Sound\\fx\\npc",r"Sound\\fx\\obj",r"Sound\\fx\\phy\\",r"Sound\\fx\\qst",r"Sound\\fx\\temp",r"Sound\\fx\\trp",r"Sound\\fx\\ui",r"Sound\\fx\\voc",r"Sound\\fx\\wpn",r"Sound\\fx\\"]
-voicebasedirectory=r"Sound\\Voice\\falloutnv.esm\\"
+voicebasedirectory=r"\\Sound\\Voice\\falloutnv.esm\\"
 voicedirectory=[r"creatureferalghoul",r"creaturelowintsm",r"creaturesmartsm",r"creaturesupermutant",r"creatureuniquelily",r"creatureuniquemarcus",r"creatureuniquemrhouse",r"creatureuniquetabitha",r"femaleadult01default",r"femaleadult02",r"femaleadult03",r"femaleadult04",r"femaleadult05",r"femaleadult06",r"femaleadult07",r"femaleadult08",r"femaleadult09",r"femaleadult10",r"femaleadult11",r"femaleadult12",r"femalechild01",r"femalechild02",r"femalegenericghoul",r"femaleghoul02",r"femaleold01",r"femaleold02",r"femaleold03",r"femaleuniquecass",r"femaleuniquemoore",r"femaleuniqueveronica",r"ghouluniqueraul",r"maleadult01default",r"maleadult01defaultb",r"maleadult02",r"maleadult03",r"maleadult04",r"maleadult05",r"maleadult06",r"maleadult07",r"maleadult08",r"maleadult09",r"maleadult10",r"maleadult11",r"maleadult12",r"malechild01",r"malechild02",r"malegenericghoul",r"maleghoul02",r"maleold01",r"maleold02",r"maleuniquearcade",r"maleuniquebenny",r"maleuniquebigsal",r"maleuniquebillyknight",r"maleuniquecaesar",r"maleuniquecolonelhsu",r"maleuniquecraigboone",r"maleuniquedocmitchell",r"maleuniquehanlon",r"maleuniquejasonbright",r"maleuniquelanius",r"maleuniquemrnewvegas",r"maleuniquenarrator",r"maleuniquepapakhan",r"D:/Games/GOGO/FalloutNewVegasRand/Data/Sound/Voice/falloutnv.esm/maleuniquepresident",r"maleuniquetheking",r"maleuniquevulpe",r"playervoicefemale",r"playervoicemale",r"robotede",r"roboteyebot",r"robotfestus",r"robotlibertyprime",r"robotmistergutsy",r"robotmisterhandy",r"robotprotectron",r"robotrobobrain",r"robotsentrybot",r"robotuniquerex",r"robotvictor",r"robotyesman",r"temp"]
 #temparray=glob.glob(direc+voicebasedirectory+voicedirectory[0]+r"\**\*.ogg",recursive=True)
 SoundRandom=input("Randomise Sounds: True/False\n")
@@ -69,7 +76,8 @@ if (SoundRandom.upper()=="TRUE"):
             ()
         except IndexError:
             ()
-    
+else:
+    ()
 if(VoiceRandom.upper()=="TRUE"):
     for textdirec in voicedirectory:
         try:
@@ -78,7 +86,7 @@ if(VoiceRandom.upper()=="TRUE"):
             ()
         except IndexError:
             ()
-    else:
-        ()
+else:
+    ()
 print("done")
 input("Press Enter To Close")
