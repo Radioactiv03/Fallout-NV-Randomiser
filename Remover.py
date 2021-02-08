@@ -1,6 +1,6 @@
 import os,glob
 suffix = "_n.dds"
-path=input("Please Enter you Fallout Data Directory\nEg: C:\Games\GoG\FalloutNewVegas\Data\\\n:")
+path=os.getcwd()
 lod=r"Textures\Landscape\Lod\\"
 pipboy=r"Textures\\pipboy3000"
 annoydir=[r"Sound\\fx\\amb\\amb_desertdefault\\"]

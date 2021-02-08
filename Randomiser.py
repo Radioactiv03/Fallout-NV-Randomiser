@@ -1,7 +1,8 @@
 import os, time, random,glob
 from shutil import *
 
-direc=input("Please enter your Fallout Data Directory\nEg:C:\Games\GoG\FalloutNewVegas\Data\\\n:")
+direc=os.getcwd()
+print(direc)
 directory=[r"\\textures\\architecture\\",r"\\textures\\armor\\",r"\\textures\\characters\\",r"\\textures\\clutter\\",r"\\textures\\creatures\\",r"\\textures\\decals\\",r"\\textures\\dungeons\\",r"\\textures\\effects\\",r"\\textures\\fonts\\",r"\\textures\\furniture\\",r"\\textures\\gore\\",r"\\textures\\interface\\barter",r"\\textures\\interface\\companion_wheel",r"\\textures\\interface\\credits",r"\\textures\\interface\\endgame",r"\\textures\\interface\\faders",r"\\textures\\interface\\hotkeys",r"\\textures\\interface\\hud",r"\\textures\\interface\\icons",r"\\textures\\interface\\loading",r"\\textures\\interface\\main",r"\\textures\\interface\\notes",r"\\textures\\interface\\pause",r"\\textures\\interface\\radio wave",r"\\textures\\interface\\shared",r"\\textures\\interface\\stats",r"\\textures\\interface\\target_reticule",r"\\textures\\interface\\vats",r"\\textures\\interface\\worldmap",r"\\textures\\landscape\\",r"\\textures\\pimpboy3billion\\",r"\\textures\\pipboy3000\\",r"\\textures\\projectiles\\",r"\\textures\\shared\\",r"\\textures\\sky\\",r"\\textures\\temp\\",r"\\textures\\terminals\\",r"\\textures\\traps\\",r"\\textures\\trees\\",r"\\textures\\vehicles\\",r"\\textures\\water\\",r"\\textures\\weapons\\"]
 audiodirectory=[r"Sound\\fx\\amb",r"Sound\\fx\\drs",r"Sound\\fx\\emt",r"Sound\\fx\\fol",r"Sound\\fx\\fst",r"Sound\\fx\\fx",r"Sound\\fx\\itm",r"Sound\\fx\\mus",r"Sound\\fx\\npc",r"Sound\\fx\\obj",r"Sound\\fx\\phy\\",r"Sound\\fx\\qst",r"Sound\\fx\\temp",r"Sound\\fx\\trp",r"Sound\\fx\\ui",r"Sound\\fx\\voc",r"Sound\\fx\\wpn",r"Sound\\fx\\"]
 voicebasedirectory=r"Sound\\Voice\\falloutnv.esm\\"
