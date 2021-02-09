@@ -1,10 +1,16 @@
 import os,glob
 suffix = "_n.dds"
 path=os.getcwd()
-lod=r"Textures\Landscape\Lod\\"
+okay=input("1.Enter Game Directory\n2.Use Current Python File Directory\n")
+if (okay=="1"):
+    path=input("Enter Games data directory")
+else:
+    ()
+lod=r"\Textures\Landscape\Lod\\"
 pipboy=r"Textures\\pipboy3000"
 annoydir=[r"Sound\\fx\\amb\\amb_desertdefault\\"]
 directory=[lod]
+
 print("Deleting normal files")
 for name in glob.glob(path+"/**/*.dds", recursive=True): 
     if(name.endswith("_n.dds")==True):
